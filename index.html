@@ -1,13 +1,246 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Prem Patel official personal and technology portfolio."><title>PREM PATEL | Home</title><link rel="stylesheet" href="style.css"></head><body>
-<header><a class="logo" href="index.html" style="text-decoration:none">PREM PATEL</a><nav><a href="index.html">Home</a><a href="about.html">About</a><a href="education.html">Education</a><a href="skills.html">Skills</a><a href="journey.html">Journey</a><a href="projects.html">Projects</a><a href="goals.html">Goals</a><a href="contact.html">Contact</a></nav><button id="langBtn" onclick="changeLanguage()">हिंदी</button></header>
-<main><section class="hero">
-<img class="avatar" src="assets/avatar.png" alt="Cybersecurity avatar">
-<h1>PREM <span>PATEL</span></h1>
-<p class="subtitle" data-i18n="subtitle">OFFICIAL PERSONAL WEBSITE</p>
-<div class="status"><i class="dot"></i><span data-i18n="status">SYSTEM ONLINE</span></div>
-<p class="lead" data-i18n="intro">Hello! I'm Prem Patel, a student from India interested in technology, artificial intelligence and cybersecurity.</p>
-<p style="color:var(--blue);letter-spacing:2px">LEARN • BUILD • INNOVATE</p>
-</section>
-<section class="grid">
-<article class="card"><h2 data-i18n="about">About Me</h2><p>A short introduction, interests and personality.</p><a class="btn" href="about.html" data-i18n="read">Read More →</a></article><article class="card"><h2 data-i18n="education">Education</h2><p>My current studies and learning goals.</p><a class="btn" href="education.html" data-i18n="read">Read More →</a></article><article class="card"><h2 data-i18n="skills">Skills & Learning</h2><p>Technologies I am learning and exploring.</p><a class="btn" href="skills.html" data-i18n="read">Read More →</a></article><article class="card"><h2 data-i18n="journey">My Journey</h2><p>My progress in technology and development.</p><a class="btn" href="journey.html" data-i18n="read">Read More →</a></article><article class="card"><h2 data-i18n="projects">My Projects</h2><p>A look at my personal technology projects.</p><a class="btn" href="projects.html" data-i18n="read">Read More →</a></article><article class="card"><h2 data-i18n="goals">Future Goals</h2><p>My ambitions in cybersecurity and software.</p><a class="btn" href="goals.html" data-i18n="read">Read More →</a></article><article class="card"><h2 data-i18n="contact">Contact</h2><p>Find my public Instagram profile.</p><a class="btn" href="contact.html" data-i18n="read">Read More →</a></article></section><p style="margin-top:24px"><a class="back" href="index.html">← Back to Home</a></p></main>
-<footer>© 2026 PREM PATEL | OFFICIAL PERSONAL WEBSITE</footer><script src="script.js"></script></body></html>
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Prem Patel – Official personal portfolio. Technology enthusiast, aspiring cybersecurity professional and developer from India."><meta name="keywords" content="Prem Patel, Prem Patel official, Cybersecurity, Technology, Portfolio"><meta name="author" content="Prem Patel"><meta name="theme-color" content="#050816"><title>PREM PATEL | Official Website</title><link rel="stylesheet" href="style.css"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+background:#050816;
+color:#fff;
+font-family:Arial,sans-serif;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 7%;
+background:#090e20;
+border-bottom:1px solid #15264c;
+flex-wrap:wrap;
+gap:15px;
+}
+
+.logo{
+font-size:23px;
+font-weight:bold;
+color:#00bfff;
+text-decoration:none;
+letter-spacing:2px;
+}
+
+nav{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+}
+
+nav a{
+color:#ccc;
+text-decoration:none;
+font-size:13px;
+}
+
+nav a:hover{color:#00bfff}
+
+button,.btn{
+background:#008cff;
+color:white;
+border:0;
+padding:10px 17px;
+border-radius:7px;
+cursor:pointer;
+text-decoration:none;
+}
+
+.hero{
+text-align:center;
+padding:90px 20px 65px;
+}
+
+.avatar{
+width:155px;
+height:155px;
+border-radius:50%;
+object-fit:cover;
+border:3px solid #00bfff;
+box-shadow:0 0 25px #008cff;
+animation:glow 3s infinite alternate;
+}
+
+@keyframes glow{
+from{box-shadow:0 0 10px #008cff}
+to{box-shadow:0 0 35px #00bfff}
+}
+
+h1{
+font-size:48px;
+margin-top:25px;
+letter-spacing:4px;
+}
+
+h1 span{color:#00bfff}
+
+.subtitle{
+color:#aaa;
+letter-spacing:4px;
+margin-top:12px;
+}
+
+.status{
+margin:22px auto;
+color:#00ff9d;
+}
+
+.dot{
+display:inline-block;
+width:9px;
+height:9px;
+background:#00ff9d;
+border-radius:50%;
+margin-right:8px;
+}
+
+.lead{
+max-width:650px;
+margin:20px auto;
+line-height:1.8;
+color:#bbb;
+}
+
+.tagline{
+color:#00bfff;
+letter-spacing:3px;
+margin-top:25px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:30px 7%;
+}
+
+.card{
+background:#0c1429;
+border:1px solid #1a3157;
+padding:25px;
+border-radius:13px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+border-color:#00bfff;
+}
+
+.card h2{
+color:#00bfff;
+margin-bottom:13px;
+font-size:20px;
+}
+
+.card p{
+color:#aaa;
+line-height:1.6;
+margin-bottom:20px;
+}
+
+.social{
+text-align:center;
+padding:45px 20px;
+}
+
+.social a{
+display:inline-block;
+margin:8px;
+}
+
+footer{
+text-align:center;
+padding:25px;
+color:#777;
+border-top:1px solid #15264c;
+font-size:13px;
+}
+
+@media(max-width:600px){
+header{justify-content:center}
+nav{justify-content:center}
+h1{font-size:34px}
+.hero{padding-top:60px}
+}
+</style></head><body><header>
+<a class="logo" href="index.html">PREM PATEL</a><nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="education.html">Education</a>
+<a href="skills.html">Skills</a>
+<a href="journey.html">Journey</a>
+<a href="projects.html">Projects</a>
+<a href="goals.html">Goals</a>
+<a href="contact.html">Contact</a>
+</nav><button onclick="changeLanguage()" id="langBtn">हिंदी</button>
+
+</header><main><section class="hero"><img class="avatar"
+src="assets/Aavatar.png"
+alt="Prem Patel profile avatar"
+onerror="this.src='Aavatar.png'">
+
+<h1>PREM <span>PATEL</span></h1><p class="subtitle">OFFICIAL PERSONAL WEBSITE</p><div class="status">
+<span class="dot"></span>SYSTEM ONLINE
+</div><p class="lead">
+Hello! I'm Prem Patel, a student from India interested in
+technology, artificial intelligence, software development
+and cybersecurity.
+</p><p class="tagline">
+LEARN • BUILD • INNOVATE
+</p></section><section class="grid"><article class="card">
+<h2>👤 About Me</h2>
+<p>Discover my introduction, interests and personality.</p>
+<a class="btn" href="about.html">Read More →</a>
+</article><article class="card">
+<h2>🎓 Education</h2>
+<p>My education and academic journey.</p>
+<a class="btn" href="education.html">Read More →</a>
+</article><article class="card">
+<h2>💻 Skills</h2>
+<p>Technology, programming and skills I am learning.</p>
+<a class="btn" href="skills.html">Read More →</a>
+</article><article class="card">
+<h2>🚀 My Journey</h2>
+<p>My progress in technology and development.</p>
+<a class="btn" href="journey.html">Read More →</a>
+</article><article class="card">
+<h2>🤖 Projects</h2>
+<p>Explore my personal projects, including J.A.R.V.I.S.</p>
+<a class="btn" href="projects.html">Read More →</a>
+</article><article class="card">
+<h2>🎯 Future Goals</h2>
+<p>My ambitions in cybersecurity and software development.</p>
+<a class="btn" href="goals.html">Read More →</a>
+</article><article class="card">
+<h2>📩 Contact</h2>
+<p>Connect with me through my public social profile.</p>
+<a class="btn" href="contact.html">Read More →</a>
+</article></section><section class="social">
+<h2>CONNECT WITH ME</h2>
+<br>
+<a class="btn"
+href="https://www.instagram.com/patel.darkx.in/"
+target="_blank"
+rel="noopener noreferrer">
+Instagram ↗
+</a>
+<a class="btn"
+href="https://github.com/premxjarvis"
+target="_blank"
+rel="noopener noreferrer">
+GitHub ↗
+</a>
+</section></main><footer>
+© 2026 PREM PATEL | OFFICIAL PERSONAL WEBSITE
+<br><br>
+Built with passion for technology.
+</footer><script src="script.js"></script></body>
+</html>
