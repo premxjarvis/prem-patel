@@ -1,0 +1,28 @@
+
+:root{--bg:#050810;--panel:#0c1627;--blue:#00aaff;--muted:#b7c9dc}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at 50% 0,#0b1d32 0,#050810 48%);color:#fff;font-family:Arial,sans-serif;min-height:100vh}
+header{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 6%;border-bottom:1px solid #123b65;position:sticky;top:0;background:#050810ed;backdrop-filter:blur(10px);z-index:5;flex-wrap:wrap}
+.logo{font-weight:800;color:var(--blue);letter-spacing:1px}
+nav{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
+nav a,.back{color:#d8eaff;text-decoration:none;font-size:14px}
+nav a:hover{color:var(--blue)}
+button,.btn{background:var(--blue);color:#00101d;border:0;border-radius:8px;padding:11px 16px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block}
+main{max-width:1050px;margin:auto;padding:42px 22px}
+.hero{text-align:center;padding:48px 15px 34px}
+.avatar{width:150px;height:150px;border-radius:50%;border:3px solid var(--blue);object-fit:cover;box-shadow:0 0 28px #008cff88;animation:pulse 3s infinite}
+h1{font-size:clamp(30px,6vw,48px);margin:18px 0 8px}h1 span,h2{color:var(--blue)}
+.subtitle{color:var(--muted);letter-spacing:2px;font-size:13px}
+.lead{max-width:680px;margin:18px auto;color:var(--muted);line-height:1.7}
+.status{display:inline-flex;align-items:center;gap:9px;color:#7df7b0;border:1px solid #1b7751;background:#062116;padding:9px 15px;border-radius:30px;font-size:12px;letter-spacing:2px;margin:16px 0}
+.dot{width:8px;height:8px;background:#28ed87;border-radius:50%;box-shadow:0 0 12px #28ed87;animation:blink 1.3s infinite}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin:22px 0 35px}
+.card{background:linear-gradient(145deg,#0d1b2e,#09111e);border:1px solid #123d65;border-radius:14px;padding:24px;transition:.25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 0 22px #0066aa55;border-color:var(--blue)}
+.card h2{font-size:20px;margin-bottom:12px}.card p,.content p,.content li{color:var(--muted);line-height:1.75}
+.card p{margin-bottom:17px}
+.content{background:#0c1627;border:1px solid #123d65;border-radius:16px;padding:28px;margin:18px 0}
+.content h2{margin:18px 0 9px}.content ul{padding-left:22px}
+footer{text-align:center;padding:28px;color:#8499b0;border-top:1px solid #123b65;font-size:13px}
+@keyframes blink{50%{opacity:.25}}@keyframes pulse{50%{box-shadow:0 0 42px #008cff}}
+@media(max-width:600px){header{justify-content:center}nav{gap:10px}nav a{font-size:12px}.hero{padding-top:35px}}
