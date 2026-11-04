@@ -1,246 +1,244 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Prem Patel – Official personal portfolio. Technology enthusiast, aspiring cybersecurity professional and developer from India."><meta name="keywords" content="Prem Patel, Prem Patel official, Cybersecurity, Technology, Portfolio"><meta name="author" content="Prem Patel"><meta name="theme-color" content="#050816"><title>PREM PATEL | Official Website</title><link rel="stylesheet" href="style.css"><style>
-*{margin:0;padding:0;box-sizing:border-box}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-body{
-background:#050816;
-color:#fff;
-font-family:Arial,sans-serif;
-}
+    <title>Prem Patel | Official Personal Website</title>
 
-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 7%;
-background:#090e20;
-border-bottom:1px solid #15264c;
-flex-wrap:wrap;
-gap:15px;
-}
+    <meta name="description" content="Welcome to the official website of Prem Patel. Explore my technology interests, cybersecurity learning journey, skills, projects and goals.">
 
-.logo{
-font-size:23px;
-font-weight:bold;
-color:#00bfff;
-text-decoration:none;
-letter-spacing:2px;
-}
+    <meta name="keywords" content="Prem Patel, Prem Patel official website, Cybersecurity Learner, Tech Enthusiast, Python Developer">
 
-nav{
-display:flex;
-flex-wrap:wrap;
-gap:15px;
-}
+    <meta name="author" content="Prem Patel">
+    <meta name="robots" content="index, follow">
 
-nav a{
-color:#ccc;
-text-decoration:none;
-font-size:13px;
-}
+    <meta property="og:title" content="Prem Patel | Official Personal Website">
+    <meta property="og:description" content="Explore Prem Patel's technology journey, projects, skills and goals.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://premxjarvis.github.io/prem-patel/">
 
-nav a:hover{color:#00bfff}
+    <link rel="canonical" href="https://premxjarvis.github.io/prem-patel/">
 
-button,.btn{
-background:#008cff;
-color:white;
-border:0;
-padding:10px 17px;
-border-radius:7px;
-cursor:pointer;
-text-decoration:none;
-}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.hero{
-text-align:center;
-padding:90px 20px 65px;
-}
+        body {
+            background: #080b12;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
 
-.avatar{
-width:155px;
-height:155px;
-border-radius:50%;
-object-fit:cover;
-border:3px solid #00bfff;
-box-shadow:0 0 25px #008cff;
-animation:glow 3s infinite alternate;
-}
+        header {
+            padding: 22px 8%;
+            background: #101522;
+            border-bottom: 1px solid #26334b;
+            text-align: center;
+        }
 
-@keyframes glow{
-from{box-shadow:0 0 10px #008cff}
-to{box-shadow:0 0 35px #00bfff}
-}
+        header h2 {
+            color: #38bdf8;
+            letter-spacing: 2px;
+        }
 
-h1{
-font-size:48px;
-margin-top:25px;
-letter-spacing:4px;
-}
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
 
-h1 span{color:#00bfff}
+        .avatar {
+            width: 145px;
+            height: 145px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #38bdf8;
+            margin-bottom: 25px;
+            box-shadow: 0 0 25px #0ea5e955;
+        }
 
-.subtitle{
-color:#aaa;
-letter-spacing:4px;
-margin-top:12px;
-}
+        .hero h1 {
+            font-size: clamp(32px, 7vw, 55px);
+            margin-bottom: 10px;
+        }
 
-.status{
-margin:22px auto;
-color:#00ff9d;
-}
+        .hero h1 span {
+            color: #38bdf8;
+        }
 
-.dot{
-display:inline-block;
-width:9px;
-height:9px;
-background:#00ff9d;
-border-radius:50%;
-margin-right:8px;
-}
+        .hero p {
+            color: #b8c3d6;
+            max-width: 600px;
+            margin: 10px auto;
+        }
 
-.lead{
-max-width:650px;
-margin:20px auto;
-line-height:1.8;
-color:#bbb;
-}
+        .badge {
+            color: #38bdf8;
+            border: 1px solid #38bdf8;
+            padding: 6px 16px;
+            border-radius: 30px;
+            margin-bottom: 18px;
+        }
 
-.tagline{
-color:#00bfff;
-letter-spacing:3px;
-margin-top:25px;
-}
+        .buttons {
+            margin-top: 25px;
+        }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-padding:30px 7%;
-}
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            margin: 6px;
+            border-radius: 8px;
+            text-decoration: none;
+            background: #0284c7;
+            color: white;
+            font-weight: bold;
+        }
 
-.card{
-background:#0c1429;
-border:1px solid #1a3157;
-padding:25px;
-border-radius:13px;
-transition:.3s;
-}
+        .btn.secondary {
+            background: transparent;
+            border: 1px solid #38bdf8;
+        }
 
-.card:hover{
-transform:translateY(-6px);
-border-color:#00bfff;
-}
+        section {
+            padding: 45px 8%;
+            text-align: center;
+        }
 
-.card h2{
-color:#00bfff;
-margin-bottom:13px;
-font-size:20px;
-}
+        section h2 {
+            color: #38bdf8;
+            margin-bottom: 18px;
+        }
 
-.card p{
-color:#aaa;
-line-height:1.6;
-margin-bottom:20px;
-}
+        .card {
+            background: #111827;
+            border: 1px solid #26334b;
+            border-radius: 14px;
+            padding: 25px;
+            max-width: 750px;
+            margin: 15px auto;
+        }
 
-.social{
-text-align:center;
-padding:45px 20px;
-}
+        .card p {
+            color: #cbd5e1;
+        }
 
-.social a{
-display:inline-block;
-margin:8px;
-}
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #101522;
+            color: #94a3b8;
+            border-top: 1px solid #26334b;
+        }
 
-footer{
-text-align:center;
-padding:25px;
-color:#777;
-border-top:1px solid #15264c;
-font-size:13px;
-}
+        a {
+            color: #38bdf8;
+        }
+    </style>
+</head>
 
-@media(max-width:600px){
-header{justify-content:center}
-nav{justify-content:center}
-h1{font-size:34px}
-.hero{padding-top:60px}
-}
-</style></head><body><header>
-<a class="logo" href="index.html">PREM PATEL</a><nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="education.html">Education</a>
-<a href="skills.html">Skills</a>
-<a href="journey.html">Journey</a>
-<a href="projects.html">Projects</a>
-<a href="goals.html">Goals</a>
-<a href="contact.html">Contact</a>
-</nav><button onclick="changeLanguage()" id="langBtn">हिंदी</button>
+<body>
 
-</header><main><section class="hero"><img class="avatar"
-src="assets/Aavatar.png"
-alt="Prem Patel profile avatar"
-onerror="this.src='Aavatar.png'">
+<header>
+    <h2>PREM PATEL</h2>
+</header>
 
-<h1>PREM <span>PATEL</span></h1><p class="subtitle">OFFICIAL PERSONAL WEBSITE</p><div class="status">
-<span class="dot"></span>SYSTEM ONLINE
-</div><p class="lead">
-Hello! I'm Prem Patel, a student from India interested in
-technology, artificial intelligence, software development
-and cybersecurity.
-</p><p class="tagline">
-LEARN • BUILD • INNOVATE
-</p></section><section class="grid"><article class="card">
-<h2>👤 About Me</h2>
-<p>Discover my introduction, interests and personality.</p>
-<a class="btn" href="about.html">Read More →</a>
-</article><article class="card">
-<h2>🎓 Education</h2>
-<p>My education and academic journey.</p>
-<a class="btn" href="education.html">Read More →</a>
-</article><article class="card">
-<h2>💻 Skills</h2>
-<p>Technology, programming and skills I am learning.</p>
-<a class="btn" href="skills.html">Read More →</a>
-</article><article class="card">
-<h2>🚀 My Journey</h2>
-<p>My progress in technology and development.</p>
-<a class="btn" href="journey.html">Read More →</a>
-</article><article class="card">
-<h2>🤖 Projects</h2>
-<p>Explore my personal projects, including J.A.R.V.I.S.</p>
-<a class="btn" href="projects.html">Read More →</a>
-</article><article class="card">
-<h2>🎯 Future Goals</h2>
-<p>My ambitions in cybersecurity and software development.</p>
-<a class="btn" href="goals.html">Read More →</a>
-</article><article class="card">
-<h2>📩 Contact</h2>
-<p>Connect with me through my public social profile.</p>
-<a class="btn" href="contact.html">Read More →</a>
-</article></section><section class="social">
-<h2>CONNECT WITH ME</h2>
-<br>
-<a class="btn"
-href="https://www.instagram.com/patel.darkx.in/"
-target="_blank"
-rel="noopener noreferrer">
-Instagram ↗
-</a>
-<a class="btn"
-href="https://github.com/premxjarvis"
-target="_blank"
-rel="noopener noreferrer">
-GitHub ↗
-</a>
-</section></main><footer>
-© 2026 PREM PATEL | OFFICIAL PERSONAL WEBSITE
-<br><br>
-Built with passion for technology.
-</footer><script src="script.js"></script></body>
+<main>
+
+    <div class="hero">
+
+        <img
+            class="avatar"
+            src="assets/Aavatar.png"
+            alt="Prem Patel profile image"
+            onerror="this.onerror=null;this.src='Aavatar.png';"
+        >
+
+        <div class="badge">TECH ENTHUSIAST</div>
+
+        <h1>Hello, I'm <span>Prem Patel</span></h1>
+
+        <p>
+            Welcome to my official personal website.
+            I am interested in technology, programming
+            and learning cybersecurity.
+        </p>
+
+        <div class="buttons">
+            <a href="about.html" class="btn">About Me</a>
+            <a href="projects.html" class="btn secondary">My Projects</a>
+        </div>
+
+    </div>
+
+    <section>
+        <h2>About Me</h2>
+
+        <div class="card">
+            <p>
+                I am a student and technology enthusiast.
+                I enjoy learning Python, exploring computers
+                and developing new ideas.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>My Interests</h2>
+
+        <div class="card">
+            <p>Cybersecurity • Python • Technology • Web Development</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>My Goal</h2>
+
+        <div class="card">
+            <p>
+                My goal is to improve my technical skills,
+                build useful projects and grow in the world
+                of technology.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Connect With Me</h2>
+
+        <div class="card">
+            <p>
+                Instagram:
+                <a href="https://www.instagram.com/patel.darkx.in/"
+                   target="_blank" rel="noopener noreferrer">
+                    @patel.darkx.in
+                </a>
+            </p>
+
+            <p>
+                GitHub:
+                <a href="https://github.com/premxjarvis"
+                   target="_blank" rel="noopener noreferrer">
+                    premxjarvis
+                </a>
+            </p>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    © 2026 Prem Patel | Official Personal Website
+</footer>
+
+</body>
 </html>
