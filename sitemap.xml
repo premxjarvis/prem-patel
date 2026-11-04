@@ -1,17 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">  <url>
+<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
     <loc>https://premxjarvis.github.io/prem-patel/</loc>
-  </url>  <url>
+  </url>
+  <url>
     <loc>https://premxjarvis.github.io/prem-patel/about.html</loc>
-  </url>  <url>
+  </url>
+  <url>
     <loc>https://premxjarvis.github.io/prem-patel/education.html</loc>
-  </url>  <url>
+  </url>
+  <url>
     <loc>https://premxjarvis.github.io/prem-patel/skills.html</loc>
-  </url>  <url>
+  </url>
+  <url>
     <loc>https://premxjarvis.github.io/prem-patel/journey.html</loc>
-  </url>  <url>
+  </url>
+  <url>
     <loc>https://premxjarvis.github.io/prem-patel/projects.html</loc>
-  </url>  <url>
+  </url>
+  <url>
     <loc>https://premxjarvis.github.io/prem-patel/goals.html</loc>
-  </url>  <url>
+  </url>
+  <url>
     <loc>https://premxjarvis.github.io/prem-patel/contact.html</loc>
-  </url></urlset>
+  </url>
+</urlset>
